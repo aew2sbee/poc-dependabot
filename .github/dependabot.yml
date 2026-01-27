@@ -1,0 +1,22 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  # 1) GitHub Actions の action を最新化する（actions/setup-node など）
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "github-actions"
+
+  # 2) npm 依存も（必要なら）最新化する
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "npm"
