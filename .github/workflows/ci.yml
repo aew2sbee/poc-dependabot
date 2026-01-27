@@ -11,7 +11,7 @@ jobs:
       # わざと古い major に固定（Dependabot が更新PRを作りやすい）
       - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
           node-version: "16" # 古い固定（例）
           cache: "npm"
