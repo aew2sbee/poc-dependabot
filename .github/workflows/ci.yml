@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # わざと古い major に固定（Dependabot が更新PRを作りやすい）
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v3
         with:
